@@ -3,26 +3,30 @@ package com.example.marvinloco.aplicativologistico;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.os.Handler;
 
-public class Principal extends AppCompatActivity {
+
+public class Principal extends AppCompatActivity{
+
+    // Duración en milisegundos que se mostrará el splash
+    private final int DURACION_SPLASH = 3000; // 3 segundos
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Tenemos una plantilla llamada splash.xml donde mostraremos la información que queramos (logotipo, etc.)
         setContentView(R.layout.activity_principal);
 
-        Button btn = (Button) findViewById(R.id.btn_1);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent (v.getContext(), Secundaria.class);
-                startActivityForResult(intent, 0);
-            }
-        });
+        new Handler().postDelayed(new Runnable(){
+            public void run(){
+                // Cuando pasen los 3 segundos, pasamos a la actividad principal de la aplicación
+                Intent intent = new Intent(Principal.this, Secundaria.class);
+                startActivity(intent);
+                finish();
+            };
+        }, DURACION_SPLASH);
     }
 }
-
 
 
