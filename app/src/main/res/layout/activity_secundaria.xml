@@ -4,7 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login"
     tools:context="com.example.marvinloco.aplicativologistico.Principal">
 
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="Ingresar:"
+        android:textSize="45dp"
+        android:layout_alignBottom="@+id/ed1"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edi2"
+        android:layout_alignEnd="@+id/tx1"
+        android:layout_alignLeft="@+id/btn_2"
+        android:layout_alignRight="@+id/tx1"
+        android:layout_alignStart="@+id/btn_2"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:hint="Usuario:"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/background_dark" />
+
+
+    <EditText
+        android:id="@+id/edi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Contraseña:"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/background_dark"
+        android:layout_above="@+id/btn_2"
+        android:layout_toLeftOf="@+id/btn_3"
+        android:layout_toStartOf="@+id/btn_3" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:id="@+id/btn_2"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/tx1"
+        android:layout_toStartOf="@+id/tx1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:id="@+id/btn_3"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/tx1"
+        android:layout_toEndOf="@+id/tx1" />
 
 </RelativeLayout>
