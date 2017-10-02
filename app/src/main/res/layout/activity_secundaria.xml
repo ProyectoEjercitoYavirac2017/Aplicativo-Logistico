@@ -8,45 +8,68 @@
     tools:context="com.example.marvinloco.aplicativologistico.Principal">
 
     <TextView
-        android:id="@+id/tx1"
+        android:id="@+id/txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="62dp"
         android:text="Ingresar:"
-        android:textSize="45dp"
-        android:layout_alignBottom="@+id/ed1"
-        android:layout_centerHorizontal="true" />
-
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="217dp" />
 
     <EditText
-        android:id="@+id/ed1"
+        android:id="@+id/edi1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/edi2"
-        android:layout_alignEnd="@+id/tx1"
-        android:layout_alignLeft="@+id/btn_2"
-        android:layout_alignRight="@+id/tx1"
-        android:layout_alignStart="@+id/btn_2"
-        android:layout_marginBottom="22dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginStart="50dp"
         android:hint="Usuario:"
         android:textColorHighlight="@color/colorPrimaryDark"
-        android:textColorHint="@android:color/background_dark" />
+        android:textColorHint="@android:color/background_dark"
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="18dp"
+        android:layout_alignLeft="@+id/edi2"
+        android:layout_alignStart="@+id/edi2"
+        android:layout_alignRight="@+id/edi2"
+        android:layout_alignEnd="@+id/edi2" />
 
 
     <EditText
         android:id="@+id/edi2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="35dp"
         android:ems="10"
         android:hint="Contraseña:"
         android:inputType="textPassword"
         android:textColorHint="@android:color/background_dark"
+        android:layout_alignTop="@+id/edi1"
+        android:layout_alignLeft="@+id/btn_2"
+        android:layout_alignStart="@+id/btn_2"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="53dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intentos:"
+        android:id="@+id/txt2"
+        android:textSize="25dp"
         android:layout_above="@+id/btn_2"
-        android:layout_toLeftOf="@+id/btn_3"
-        android:layout_toStartOf="@+id/btn_3" />
+        android:layout_alignLeft="@+id/btn_2"
+        android:layout_alignStart="@+id/btn_2"
+        android:layout_marginBottom="29dp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Intento"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/txt2"
+        android:layout_alignBottom="@+id/txt2"
+        android:layout_alignRight="@+id/btn_3"
+        android:layout_alignEnd="@+id/btn_3"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
 
 
     <Button
@@ -54,17 +77,22 @@
         android:layout_height="wrap_content"
         android:text="Entrar"
         android:id="@+id/btn_2"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/tx1"
-        android:layout_toStartOf="@+id/tx1" />
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_alignTop="@+id/btn_3"
+        android:layout_toLeftOf="@+id/txt1"
+        android:layout_toStartOf="@+id/txt1" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrar"
+        android:text="Cancelar"
         android:id="@+id/btn_3"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/tx1"
-        android:layout_toEndOf="@+id/tx1" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="22dp" />
 
 </RelativeLayout>
