@@ -17,7 +17,7 @@ public class Secundaria extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secundaria);
 
-        edi1 = (EditText) findViewById(R.id.txt1);
+        edi1 = (EditText) findViewById(R.id.edi1);
         edi2 = (EditText) findViewById(R.id.edi2);
         btn_2 = (Button) findViewById(R.id.btn_2);
         btn_3 = (Button) findViewById(R.id.btn_3);
@@ -42,6 +42,7 @@ public class Secundaria extends AppCompatActivity {
             public void onClick(View v) {
                 Intent itemintent = new Intent(Secundaria.this, Registrar.class);
                 Secundaria.this.startActivity(itemintent);
+                finish();
                 }
         });
     }
