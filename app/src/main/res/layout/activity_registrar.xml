@@ -4,30 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
+    android:background="@drawable/registro"
     tools:context="com.example.marvinloco.aplicativologistico.Principal">
 
-    <Button
+    <TextView
+        android:id="@+id/txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Entrar"
-        android:id="@+id/btn_2"
-        android:layout_marginRight="17dp"
-        android:layout_marginEnd="17dp"
+        android:text="Registro:"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp" />
+
+
+    <EditText
+        android:id="@+id/edi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombres Completos"
+        android:layout_below="@+id/txt1"
+        android:layout_alignRight="@+id/txt1"
+        android:layout_alignEnd="@+id/txt1"
+        android:layout_marginTop="22dp" />
+
+    <EditText
+        android:id="@+id/edi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Cedula"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/edi2"
+        android:layout_alignLeft="@+id/edi2"
+        android:layout_alignStart="@+id/edi2" />
+
+    <EditText
+        android:id="@+id/edi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Usuario"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/edi1"
+        android:layout_alignLeft="@+id/edi1"
+        android:layout_alignStart="@+id/edi1" />
+
+    <EditText
+        android:id="@+id/edi4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Contraseña"
+        android:layout_alignBottom="@+id/btn_2"
+        android:layout_alignLeft="@+id/edi3"
+        android:layout_alignStart="@+id/edi3" />
+
+    <EditText
+        android:id="@+id/edi5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edi4"
+        android:layout_alignStart="@+id/edi4"
         android:layout_alignTop="@+id/btn_3"
-        android:layout_toLeftOf="@+id/txt1"
-        android:layout_toStartOf="@+id/txt1" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Repetir Contraseña" />
 
     <Button
+        android:id="@+id/btn_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cancelar"
+        android:text="Crear"
+        android:layout_below="@+id/edi3"
+        android:layout_alignLeft="@+id/btn_3"
+        android:layout_alignStart="@+id/btn_3"
+        android:layout_marginTop="22dp"
+        android:layout_alignRight="@+id/btn_3"
+        android:layout_alignEnd="@+id/btn_3" />
+
+    <Button
         android:id="@+id/btn_3"
-        android:layout_marginRight="13dp"
-        android:layout_marginEnd="13dp"
-        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Cancelar"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/btn_2"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="22dp" />
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
