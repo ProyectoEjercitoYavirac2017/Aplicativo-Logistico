@@ -25,10 +25,10 @@ public class Secundaria extends AppCompatActivity {
         btn_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (edi1.getText().toString().equals("admin") &&
+                if (edi1.getText().toString().equals("a") &&
 
-                        edi2.getText().toString().equals("admin")) {
-                    Intent itemintent = new Intent(Secundaria.this, Preguntas.class);
+                        edi2.getText().toString().equals("123")) {
+                    Intent itemintent = new Intent(Secundaria.this, Logistica.class);
                     Secundaria.this.startActivity(itemintent);
                     Toast.makeText(getApplicationContext(), "Redireccionar...", Toast.LENGTH_SHORT).show();
                     } else {

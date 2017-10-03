@@ -12,19 +12,29 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="- El conductor posee matricula y esta todo positivo."
+        android:text="- Si el vehículo va a transportar personal: Si el personal va armado se realizó la verificación dedescargo previo al embarque."
         android:textColor="@android:color/background_dark"
         android:textSize="14sp"
         android:layout_below="@+id/editText4"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp" />
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Si el vehículo va a transportar lubricantes, combustibles o material inflamable: El tipo de vehículo se encuentra acorde al tipo de carga."
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="- El conductor posee matricula y esta todo positivo siempre y cuando todo lo aportado esta sin novedad."
+        android:text="- Si el vehículo va a transportar personal: el numérico de personal es acorde a la capacidad y tipo de vehiculo ."
         android:textColor="@android:color/background_dark"
         android:textSize="14sp"
         android:layout_alignParentTop="true"
@@ -73,13 +83,31 @@
         android:layout_alignEnd="@+id/editText" />
 
     <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SI"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox" />
+
+    <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NO"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/textView2"
         android:layout_toRightOf="@+id/editText"
         android:layout_toEndOf="@+id/editText" />
+
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_toRightOf="@+id/editText"
+        android:text="NO" />
 
     <EditText
         android:id="@+id/editText"
@@ -89,6 +117,17 @@
         android:hint="Observaciones:"
         android:inputType="textPersonName"
         android:layout_below="@+id/checkBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Observaciones:"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/checkBox9"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

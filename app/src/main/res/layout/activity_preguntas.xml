@@ -12,13 +12,55 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="- El conductor se realizó el chequeo médico."
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        android:layout_below="@+id/editText4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText4"
-        android:layout_marginTop="25dp"
-        android:text="- El conductor posee matricula y esta todo positivo."
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Posee Matrícula del vehiculo actualizada."
         android:textColor="@android:color/background_dark"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_below="@+id/textView"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:text="SI" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_toRightOf="@+id/editText"
+        android:text="NO" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox"
+        android:ems="10"
+        android:hint="Observaciones:"
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/textView4"
@@ -28,7 +70,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="17dp"
-        android:text="- El conductor posee matricula y esta todo positivo siempre y cuando todo lo aportado esta sin novedad."
+        android:text="- El conductor dispone de licencia profesional actualizada y de acuerdo a la categoria."
         android:textColor="@android:color/background_dark"
         android:textSize="14sp" />
 
@@ -91,6 +133,36 @@
         android:ems="10"
         android:hint="Observaciones:"
         android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SI"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/checkBox5"
+        android:layout_alignStart="@+id/checkBox5" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:layout_alignBaseline="@+id/checkBox10"
+        android:layout_alignBottom="@+id/checkBox10"
+        android:layout_toRightOf="@+id/editText3"
+        android:layout_toEndOf="@+id/editText3" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Observaciones:"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/checkBox10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/btn_1"
