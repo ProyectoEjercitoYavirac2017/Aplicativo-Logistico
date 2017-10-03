@@ -24,7 +24,7 @@ public class Registrar extends AppCompatActivity {
         btn_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (edi4.getText().toString().equals("") &&
+                if (edi4.getText().toString().equals("") ==
                         edi5.getText().toString().equals("")) {
                     Intent itemintent = new Intent(Registrar.this, Secundaria.class);
                     Registrar.this.startActivity(itemintent);

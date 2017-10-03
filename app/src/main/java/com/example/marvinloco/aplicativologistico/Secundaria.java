@@ -28,7 +28,7 @@ public class Secundaria extends AppCompatActivity {
                 if (edi1.getText().toString().equals("admin") &&
 
                         edi2.getText().toString().equals("admin")) {
-                    Intent itemintent = new Intent(Secundaria.this, Menu.class);
+                    Intent itemintent = new Intent(Secundaria.this, Preguntas.class);
                     Secundaria.this.startActivity(itemintent);
                     Toast.makeText(getApplicationContext(), "Redireccionar...", Toast.LENGTH_SHORT).show();
                     } else {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cuestionario"
+    android:background="@drawable/preguntas"
     tools:context="com.example.marvinloco.aplicativologistico.Principal">
 
 
@@ -12,84 +12,94 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="- El conductor posee matricula y esta todo positivo."
-        android:textColor="@android:color/background_dark"
-        android:textSize="14sp"
-        android:layout_below="@+id/editText4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp" />
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="25dp"
+        android:text="- El conductor posee matricula y esta todo positivo."
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="- El conductor posee matricula y esta todo positivo siempre y cuando todo lo aportado esta sin novedad."
-        android:textColor="@android:color/background_dark"
-        android:textSize="14sp"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="17dp" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:text="- El conductor posee matricula y esta todo positivo siempre y cuando todo lo aportado esta sin novedad."
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp" />
 
     <CheckBox
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SI"
-        android:layout_below="@+id/textView4"
         android:layout_alignLeft="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox" />
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_below="@+id/textView4"
+        android:text="SI" />
 
     <CheckBox
         android:id="@+id/checkBox8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NO"
         android:layout_below="@+id/textView4"
+        android:layout_toEndOf="@+id/editText"
         android:layout_toRightOf="@+id/editText"
-        android:layout_toEndOf="@+id/editText" />
+        android:text="NO" />
 
     <EditText
         android:id="@+id/editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox7"
         android:ems="10"
         android:hint="Observaciones:"
-        android:inputType="textPersonName"
-        android:layout_below="@+id/checkBox7"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:inputType="textPersonName" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SI"
-        android:layout_marginRight="67dp"
-        android:layout_marginEnd="67dp"
-        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/editText"
         android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText" />
+        android:layout_below="@+id/textView"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:text="SI" />
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NO"
         android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/editText"
         android:layout_toRightOf="@+id/editText"
-        android:layout_toEndOf="@+id/editText" />
+        android:text="NO" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox"
         android:ems="10"
         android:hint="Observaciones:"
-        android:inputType="textPersonName"
-        android:layout_below="@+id/checkBox"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
+        android:layout_toEndOf="@+id/checkBox2"
+        android:layout_toRightOf="@+id/checkBox2"
+        android:text="Siguiente" />
 
 </RelativeLayout>
