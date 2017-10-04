@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/preguntas"
+    tools:context="com.example.marvinloco.aplicativologistico.Principal">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editText4"
+                android:layout_marginTop="10dp"
+                android:text="- El conductor se realizó el chequeo médico."
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/checkBox"
+                    android:layout_alignStart="@+id/checkBox"
+                    android:layout_below="@+id/textView4"
+                    android:layout_weight="1"
+                    android:text="SI" />
+
+                <CheckBox
+                    android:id="@+id/checkBox8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView4"
+                    android:layout_toEndOf="@+id/editText"
+                    android:layout_toRightOf="@+id/editText"
+                    android:layout_weight="1"
+                    android:text="NO" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/checkBox"
+                android:ems="10"
+                android:hint="Observaciones:"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="- Posee Matrícula del vehiculo actualizada."
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/editText"
+                    android:layout_alignRight="@+id/editText"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginEnd="67dp"
+                    android:layout_marginRight="67dp"
+                    android:layout_weight="1"
+                    android:text="SI" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_toEndOf="@+id/editText"
+                    android:layout_toRightOf="@+id/editText"
+                    android:layout_weight="1"
+                    android:text="NO" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/checkBox"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Observaciones:"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="17dp"
+                android:text="- El conductor dispone de licencia profesional actualizada y de acuerdo a la categoria."
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/checkBox5"
+                android:layout_alignStart="@+id/checkBox5"
+                android:layout_below="@+id/textView5"
+                android:text="SI" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_toEndOf="@+id/editText"
+                android:layout_toRightOf="@+id/editText"
+                android:text="NO" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/checkBox10"
+                android:ems="10"
+                android:hint="Observaciones:"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editText4"
+                android:layout_marginTop="10dp"
+                android:text="- El conductor se realizó el chequeo médico."
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText"
+                android:layout_alignRight="@+id/editText"
+                android:layout_below="@+id/textView"
+                android:layout_marginEnd="67dp"
+                android:layout_marginRight="67dp"
+                android:text="SI" />
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/checkBox10"
+                android:layout_alignBottom="@+id/checkBox10"
+                android:layout_toEndOf="@+id/editText3"
+                android:layout_toRightOf="@+id/editText3"
+                android:text="NO" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/checkBox"
+                android:ems="10"
+                android:hint="Observaciones:"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="- Posee Matrícula del vehiculo actualizada."
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/checkBox"
+                android:layout_alignStart="@+id/checkBox"
+                android:layout_below="@+id/textView4"
+                android:text="SI" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_toEndOf="@+id/editText"
+                android:layout_toRightOf="@+id/editText"
+                android:text="NO" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/checkBox"
+                android:ems="10"
+                android:hint="Observaciones:"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="17dp"
+                android:text="- El conductor dispone de licencia profesional actualizada y de acuerdo a la categoria."
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText"
+                android:layout_alignRight="@+id/editText"
+                android:layout_below="@+id/textView"
+                android:layout_marginEnd="67dp"
+                android:layout_marginRight="67dp"
+                android:text="SI" />
+
+            <CheckBox
+                android:id="@+id/checkBox15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_toEndOf="@+id/editText"
+                android:layout_toRightOf="@+id/editText"
+                android:text="NO" />
+
+            <CheckBox
+                android:id="@+id/checkBox17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/checkBox10"
+                android:layout_alignBottom="@+id/checkBox10"
+                android:layout_toEndOf="@+id/editText3"
+                android:layout_toRightOf="@+id/editText3"
+                android:text="NO" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/checkBox7"
+                android:ems="10"
+                android:hint="Observaciones:"
+                android:inputType="textPersonName" />
+
+            <CheckBox
+                android:id="@+id/checkBox18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText"
+                android:layout_alignRight="@+id/editText"
+                android:layout_below="@+id/textView"
+                android:layout_marginEnd="67dp"
+                android:layout_marginRight="67dp"
+                android:text="SI" />
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="19dp"
+                android:layout_toEndOf="@+id/checkBox2"
+                android:layout_toRightOf="@+id/checkBox2"
+                android:text="Siguiente" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

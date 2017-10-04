@@ -51,7 +51,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Preguntas" />
-        <activity android:name=".Logistica"></activity>
+        <activity android:name=".Logistica" />
+        <activity android:name=".Cuestionario"></activity>
     </application>
 
 </manifest>

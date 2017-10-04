@@ -20,10 +20,22 @@ public class Logistica extends AppCompatActivity {
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent itemintent = new Intent(Logistica.this, Menu.class);
+                Intent itemintent = new Intent(Logistica.this, Cuestionario.class);
                 Logistica.this.startActivity(itemintent);
                 finish();
             }
         });
+
+        btn_2 = (Button) findViewById(R.id.btn_2);
+
+        btn_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent itemintent = new Intent(Logistica.this, Preguntas.class);
+                Logistica.this.startActivity(itemintent);
+                finish();
+            }
+        });
+
     }
 }
