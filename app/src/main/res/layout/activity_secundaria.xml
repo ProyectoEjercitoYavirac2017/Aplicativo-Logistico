@@ -17,59 +17,59 @@
         android:layout_centerHorizontal="true" />
 
     <EditText
-        android:id="@+id/edi1"
+        android:id="@+id/etusuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Usuario:"
-        android:textColorHighlight="@color/colorPrimaryDark"
-        android:textColorHint="@android:color/background_dark"
-        android:layout_marginTop="19dp"
-        android:layout_below="@+id/txt1"
         android:layout_alignLeft="@+id/btn_2"
         android:layout_alignStart="@+id/btn_2"
+        android:layout_below="@+id/txt1"
         android:layout_marginLeft="29dp"
         android:layout_marginStart="29dp"
-        android:layout_toStartOf="@+id/btn_3"
-        android:layout_toLeftOf="@+id/btn_3" />
-
-
-    <EditText
-        android:id="@+id/edi2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Contraseña:"
-        android:inputType="textPassword"
-        android:textColorHint="@android:color/background_dark"
         android:layout_marginTop="19dp"
-        android:layout_below="@+id/edi1"
-        android:layout_alignLeft="@+id/edi1"
-        android:layout_alignStart="@+id/edi1"
-        android:layout_alignRight="@+id/edi1"
-        android:layout_alignEnd="@+id/edi1" />
+        android:layout_toLeftOf="@+id/btn_3"
+        android:layout_toStartOf="@+id/btn_3"
+        android:hint="Usuario"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/background_dark" />
 
 
     <Button
+        android:id="@+id/btn_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Entrar"
-        android:id="@+id/btn_2"
-        android:layout_marginRight="17dp"
         android:layout_marginEnd="17dp"
-        android:layout_alignTop="@+id/btn_3"
+        android:layout_marginRight="17dp"
+        android:onClick="ingresar"
+        android:text="Entrar"
+        android:layout_alignBaseline="@+id/btn_3"
+        android:layout_alignBottom="@+id/btn_3"
         android:layout_toLeftOf="@+id/txt1"
         android:layout_toStartOf="@+id/txt1" />
 
     <Button
+        android:id="@+id/btn_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrar"
-        android:id="@+id/btn_3"
-        android:layout_marginRight="13dp"
-        android:layout_marginEnd="13dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="22dp" />
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:onClick="registrar"
+        android:text="Registrar" />
+
+    <EditText
+        android:id="@+id/etcontrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etusuario"
+        android:layout_alignLeft="@+id/etusuario"
+        android:layout_alignRight="@+id/etusuario"
+        android:layout_alignStart="@+id/etusuario"
+        android:layout_below="@+id/etusuario"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Contraseña" />
 
 </RelativeLayout>

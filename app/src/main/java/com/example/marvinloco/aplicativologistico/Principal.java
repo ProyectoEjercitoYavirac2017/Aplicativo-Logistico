@@ -9,7 +9,7 @@ import android.os.Handler;
 public class Principal extends AppCompatActivity{
 
     // Duración en milisegundos que se mostrará el splash
-    private final int DURACION_SPLASH = 4000; // 4 segundos
+    private final int DURACION_SPLASH = 3000; // 3 segundos
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class Principal extends AppCompatActivity{
 
         new Handler().postDelayed(new Runnable(){
             public void run(){
-                // Cuando pasen los 4 segundos, pasamos a la actividad secundaria de la aplicación
+                // Cuando pasen los 3 segundos, pasamos a la actividad secundaria de la aplicación
                 Intent intent = new Intent(Principal.this, Secundaria.class);
                 startActivity(intent);
                 finish();

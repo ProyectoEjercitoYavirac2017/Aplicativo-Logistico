@@ -1,49 +1,54 @@
 package com.example.marvinloco.aplicativologistico;
+
+import android.content.ContentValues;
 import android.content.Intent;
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.Toast;
+import android.database.sqlite.SQLiteDatabase;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class Registrar extends AppCompatActivity {
-    Button btn_2, btn_3;
-    EditText edi4, edi5;
+    EditText edi1, edi2, edi3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar);
 
-        edi4 = (EditText) findViewById(R.id.edi1);
-        edi5 = (EditText) findViewById(R.id.edi2);
-        btn_2 = (Button) findViewById(R.id.btn_2);
-        btn_3 = (Button) findViewById(R.id.btn_3);
-
-        btn_2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (edi4.getText().toString().equals("") ==
-                        edi5.getText().toString().equals("")) {
-                    Intent itemintent = new Intent(Registrar.this, Secundaria.class);
-                    Registrar.this.startActivity(itemintent);
-                    Toast.makeText(getApplicationContext(), "Redireccionar...", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Contraseña Incorrecta", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-        btn_3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent itemintent = new Intent(Registrar.this, Secundaria.class);
-                Registrar.this.startActivity(itemintent);
-                finish();
-            }
-        });
+        edi1 = (EditText) findViewById(R.id.etcodi);
+        edi2 = (EditText) findViewById(R.id.etusua);
+        edi3 = (EditText) findViewById(R.id.etcont);
     }
 
+    public void registrar(View v) {
+        DBHelper admin = new DBHelper(this, "aplicativo", null, 1);
+        SQLiteDatabase db = admin.getWritableDatabase();
+        String codigo = edi1.getText().toString();
+        String usuario = edi2.getText().toString();
+        String contrasena = edi3.getText().toString();
+
+        ContentValues values = new ContentValues();
+        values.put("codigo", codigo);
+        values.put("usuario", usuario);
+        values.put("contrasena", contrasena);
+
+        db.insert("usuarios", null, values);
+        Toast.makeText(getApplicationContext(), "Direccionando...", Toast.LENGTH_SHORT).show();
+        db.close();
+
+        Intent ven = new Intent(this, Secundaria.class);
+        startActivity(ven);
+
+    }
+
+
+    public void salir(View v) {
+        Intent ven = new Intent(this, Secundaria.class);
+        startActivity(ven);
+    }
 }
+
+
 
