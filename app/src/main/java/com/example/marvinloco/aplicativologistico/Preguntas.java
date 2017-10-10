@@ -15,7 +15,7 @@ public class Preguntas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preguntas);
 
-        btn_1 = (Button) findViewById(R.id.btn_1);
+        btn_1 = (Button) findViewById(R.id.etusua);
 
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override

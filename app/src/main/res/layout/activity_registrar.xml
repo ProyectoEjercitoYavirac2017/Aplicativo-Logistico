@@ -11,69 +11,97 @@
         android:id="@+id/txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registro:"
+        android:layout_marginTop="113dp"
+        android:text="REGISTRO"
         android:textSize="25dp"
-        android:layout_marginTop="123dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
 
-    <Button
-        android:id="@+id/btn_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="registrar"
-        android:text="Crear"
-        android:layout_marginTop="46dp"
-        android:layout_below="@+id/etcont"
-        android:layout_toLeftOf="@+id/txt1"
-        android:layout_toStartOf="@+id/txt1" />
-
-    <Button
-        android:id="@+id/btn_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="salir"
-        android:text="Cancelar"
-        android:layout_alignBaseline="@+id/btn_2"
-        android:layout_alignBottom="@+id/btn_2"
-        android:layout_toRightOf="@+id/etcont"
-        android:layout_toEndOf="@+id/etcont" />
-
     <EditText
-        android:id="@+id/etcodi"
+        android:id="@+id/etnomb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Id"
+        android:hint="Nombres Completos"
         android:inputType="textPersonName"
+        android:layout_marginTop="18dp"
         android:layout_below="@+id/txt1"
-        android:layout_alignRight="@+id/txt1"
-        android:layout_alignEnd="@+id/txt1" />
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/etusua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/etnomb"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView6"
         android:ems="10"
-        android:hint="Usuario"
-        android:inputType="textPersonName"
-        android:layout_marginTop="11dp"
-        android:layout_below="@+id/etcodi"
-        android:layout_alignLeft="@+id/etcodi"
-        android:layout_alignStart="@+id/etcodi" />
+        android:hint="Cédula"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/etcont"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPersonName"
+        android:layout_marginTop="12dp"
         android:layout_below="@+id/etusua"
         android:layout_alignLeft="@+id/etusua"
         android:layout_alignStart="@+id/etusua" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_3"
+        android:layout_alignBottom="@+id/btn_3"
+        android:layout_alignLeft="@+id/etcont"
+        android:layout_alignStart="@+id/etcont"
+        android:onClick="ingresar"
+        android:text="Crear" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etcont"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/etcont"
+        android:layout_marginBottom="43dp"
+        android:onClick="salir"
+        android:text="Cancelar" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_pencil"
+        android:layout_alignTop="@+id/etusua"
+        android:layout_toLeftOf="@+id/txt1"
+        android:layout_toStartOf="@+id/txt1"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_addperson"
+        android:layout_alignTop="@+id/etnomb"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_locker"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5" />
 
 </RelativeLayout>

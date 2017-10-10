@@ -10,8 +10,7 @@ package com.example.marvinloco.aplicativologistico;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    final String CREAR_TABLA_USUARIO="create table usuarios (codigo integer primary key,usuario text,contrasena text)";
-
+    public static final String CREAR_TABLA_USUARIO="create table usuarios (codigo int primary key , nombre text, usuario text, contrasena text)";
 
     public DBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);

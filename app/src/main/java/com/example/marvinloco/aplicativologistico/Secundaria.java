@@ -29,20 +29,20 @@ public class Secundaria extends AppCompatActivity {
         String usuario = edi1.getText().toString();
         String contrasena = edi2.getText().toString();
         fila = db.rawQuery("select usuario,contrasena from usuarios where usuario='" + usuario + "'and contrasena='" + contrasena + "'", null);
-        Toast.makeText(getApplicationContext(),"Redirecting...",Toast.LENGTH_SHORT).show();
-
 
          if (fila.moveToFirst()){
             String usua=fila.getString(0);
             String pass=fila.getString(1);
              if (usuario.equals(usua)&& contrasena.equals(pass)) {
-                 Intent ven=new Intent(this,Logistica.class);
+                 Intent ven=new Intent(Secundaria.this,Logistica.class);
                  startActivity(ven);
+                 Toast.makeText(Secundaria.this, "Ingreso exitoso", Toast.LENGTH_LONG).show();
+             }
+             else {
+                 Toast.makeText(Secundaria.this, "Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show();
                  edi1.setText("");
                  edi2.setText("");
              }
-
-
              }
 
          }
