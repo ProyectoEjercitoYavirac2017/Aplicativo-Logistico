@@ -10,14 +10,14 @@ package com.example.marvinloco.aplicativologistico;
         import android.widget.EditText;
 
 
-public class Secundaria extends AppCompatActivity {
+public class Login extends AppCompatActivity {
     EditText edi1, edi2;
     private Cursor fila;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_secundaria);
+        setContentView(R.layout.activity_login);
 
         edi1 = (EditText) findViewById(R.id.etusuario);
         edi2 = (EditText) findViewById(R.id.etcontrasena);
@@ -34,12 +34,12 @@ public class Secundaria extends AppCompatActivity {
             String usua=fila.getString(0);
             String pass=fila.getString(1);
              if (usuario.equals(usua)&& contrasena.equals(pass)) {
-                 Intent ven=new Intent(Secundaria.this,Logistica.class);
+                 Intent ven=new Intent(Login.this,Menu.class);
                  startActivity(ven);
-                 Toast.makeText(Secundaria.this, "Ingreso exitoso", Toast.LENGTH_LONG).show();
+                 Toast.makeText(Login.this, "Ingreso exitoso", Toast.LENGTH_LONG).show();
              }
              else {
-                 Toast.makeText(Secundaria.this, "Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show();
+                 Toast.makeText(Login.this, "Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show();
                  edi1.setText("");
                  edi2.setText("");
              }

@@ -21,7 +21,7 @@ public class Principal extends AppCompatActivity{
         new Handler().postDelayed(new Runnable(){
             public void run(){
                 // Cuando pasen los 3 segundos, pasamos a la actividad secundaria de la aplicación
-                Intent intent = new Intent(Principal.this, Secundaria.class);
+                Intent intent = new Intent(Principal.this, Login.class);
                 startActivity(intent);
                 finish();
             };

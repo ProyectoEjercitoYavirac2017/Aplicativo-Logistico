@@ -30,7 +30,7 @@
         android:layout_centerHorizontal="true" />
 
     <EditText
-        android:id="@+id/etusua"
+        android:id="@+id/btn_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etnomb"
@@ -49,9 +49,9 @@
         android:hint="Contraseña"
         android:inputType="textPersonName"
         android:layout_marginTop="12dp"
-        android:layout_below="@+id/etusua"
-        android:layout_alignLeft="@+id/etusua"
-        android:layout_alignStart="@+id/etusua" />
+        android:layout_below="@+id/btn_1"
+        android:layout_alignLeft="@+id/btn_1"
+        android:layout_alignStart="@+id/btn_1" />
 
     <Button
         android:id="@+id/btn_2"
@@ -80,7 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/ic_pencil"
-        android:layout_alignTop="@+id/etusua"
+        android:layout_alignTop="@+id/btn_1"
         android:layout_toLeftOf="@+id/txt1"
         android:layout_toStartOf="@+id/txt1"
         android:layout_marginRight="48dp"

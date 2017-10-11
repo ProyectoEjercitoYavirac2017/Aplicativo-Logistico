@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/preguntas"
+    android:background="@drawable/cuestionario"
     tools:context="com.example.marvinloco.aplicativologistico.Principal">
 
 
@@ -297,4 +297,5 @@
     </ScrollView>
 
 </RelativeLayout>
+
 

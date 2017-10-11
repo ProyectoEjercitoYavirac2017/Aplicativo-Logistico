@@ -17,7 +17,7 @@ public class Registrar extends AppCompatActivity {
         setContentView(R.layout.activity_registrar);
 
         edi1 = (EditText) findViewById(R.id.etnomb);
-        edi2 = (EditText) findViewById(R.id.etusua);
+        edi2 = (EditText) findViewById(R.id.btn_1);
         edi3 = (EditText) findViewById(R.id.etcont);
 
 
@@ -40,14 +40,14 @@ public class Registrar extends AppCompatActivity {
         db.insert("usuarios", null, values);
         db.close();
 
-        Intent ven = new Intent(this, Secundaria.class);
+        Intent ven = new Intent(this, Login.class);
         startActivity(ven);
 
     }
 
 
     public void salir(View v) {
-        Intent ven = new Intent(this, Secundaria.class);
+        Intent ven = new Intent(this, Login.class);
         startActivity(ven);
     }
 }
