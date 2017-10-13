@@ -6,23 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Cuestionario extends AppCompatActivity {
-
+public class Question_2 extends AppCompatActivity {
     Button btn_1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cuestionario);
-
-
-        btn_1 = (Button) findViewById(R.id.btn_1);
+        setContentView(R.layout.activity_question_2);
 
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent itemintent = new Intent(Cuestionario.this, Cuestionario_1.class);
-                Cuestionario.this.startActivity(itemintent);
+                Intent itemintent = new Intent(Question_2.this, Question_3.class);
+                Question_2.this.startActivity(itemintent);
                 finish();
             }
         });

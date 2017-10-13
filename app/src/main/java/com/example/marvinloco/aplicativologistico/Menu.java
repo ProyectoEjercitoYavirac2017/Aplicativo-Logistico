@@ -31,7 +31,7 @@ public class Menu extends AppCompatActivity {
         btn_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent itemintent = new Intent(Menu.this, Cuestionario1.class);
+                Intent itemintent = new Intent(Menu.this, Question.class);
                 Menu.this.startActivity(itemintent);
                 finish();
             }

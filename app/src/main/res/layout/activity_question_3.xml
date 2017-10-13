@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/preguntas"
+    tools:context="com.example.marvinloco.aplicativologistico.Principal">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editText4"
+                android:layout_marginTop="10dp"
+                android:text="18.-De acuerdo al tipo de carga, el vehículo cumple con las normas de seguridad establecidas."
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cb5"
+                    android:layout_alignStart="@+id/cb5"
+                    android:layout_below="@+id/txt3"
+                    android:text="SI" />
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt3"
+                    android:layout_toEndOf="@+id/et1"
+                    android:layout_toRightOf="@+id/et1"
+                    android:layout_weight="0.77"
+                    android:text="NO APLICA" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cb5"
+                android:ems="10"
+                android:hint="Observaciones:"
+                android:inputType="textPersonName" />
+
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="17dp"
+                android:text="19.-El conductor pernocto 08 horas, antes de cumplir la comisión."
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="SI" />
+
+                <CheckBox
+                    android:id="@+id/cb8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="NO" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/checkBox10"
+                android:ems="10"
+                android:hint="Observaciones:"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editText4"
+                android:layout_marginTop="10dp"
+                android:text="20.-Considerando la hora de salida y el destino del vehículo, le permite cumplir su itinerario en horas luz(HASTA LAS 18:00)."
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SI" />
+
+                <CheckBox
+                    android:id="@+id/cb10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="NO" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cb5"
+                android:ems="10"
+                android:hint="Observaciones:"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txt7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editText4"
+                android:layout_marginTop="10dp"
+                android:text="NOTA: Si el vehículo no cumple con uno de los items, es responsabilidad única del OSIS de la unidad legalizar el movimiento vehicular previo autorizacón del Sr. Jefe de Estado Mayor u Oficial Jefe de Control."
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="19dp"
+                android:layout_toEndOf="@+id/cb4"
+                android:layout_toRightOf="@+id/cb4"
+                android:text="Finalizar" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

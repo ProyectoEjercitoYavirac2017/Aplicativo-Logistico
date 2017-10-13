@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/preguntas"
+    android:background="@drawable/cuestionario"
     tools:context="com.example.marvinloco.aplicativologistico.Principal">
 
 
@@ -28,7 +28,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="1.-El conductor dispone de licencia profesional actualizada y de acuerdo a la categoria."
+                android:text="9.-Se dispone de botiquin de primeros auxilios."
                 android:textColor="@android:color/background_dark"
                 android:textSize="14sp" />
 
@@ -39,7 +39,7 @@
 
                 <CheckBox
                     android:id="@+id/cb1"
-                    android:layout_width="217dp"
+                    android:layout_width="186dp"
                     android:layout_height="wrap_content"
                     android:layout_alignLeft="@+id/cb5"
                     android:layout_alignStart="@+id/cb5"
@@ -76,7 +76,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:text="2.-El conductor se realizó el chequeo médico."
+                android:text="10.-Se dispone de medios de comunicación y contactos con quienes comunicarse en caso de emergencia."
                 android:textColor="@android:color/background_dark"
                 android:textSize="14sp" />
 
@@ -89,7 +89,7 @@
                     android:id="@+id/cb3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.07"
+                    android:layout_weight="1"
                     android:text="SI" />
 
                 <CheckBox
@@ -100,7 +100,7 @@
                     android:layout_toEndOf="@+id/et1"
                     android:layout_toRightOf="@+id/et1"
                     android:text="NO"
-                    android:layout_weight="0.77" />
+                    android:layout_weight="0.70" />
 
             </LinearLayout>
 
@@ -124,7 +124,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="17dp"
-                android:text="3.-Posee Matrícula del vehículo actualizada."
+                android:text="11.-Se dispone de triángulo reflectivo de seguridad de parqueo y linterna."
                 android:textColor="@android:color/background_dark"
                 android:textSize="14sp" />
 
@@ -167,7 +167,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="4.-Posee Orden de circulación con el nombre, grado, función y legalizada por el Comandante de Unidad. "
+                android:text="12.-Se dispone de extintor contra incendios vigente."
                 android:textColor="@android:color/background_dark"
                 android:textSize="14sp" />
 
@@ -209,7 +209,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:text="5.-Las llantas del vehículo se encuentran en buen estado."
+                android:text="13.-Dispone de la hoja de chequeo mecánico del vehículo.(Se deberá realizar el día anterior de la salida del vehículo fuera de la plaza de Pichincha)."
                 android:textColor="@android:color/background_dark"
                 android:textSize="14sp" />
 
@@ -252,7 +252,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="17dp"
-                android:text="6.-Se dispone de llanta de emergencia en buen estado."
+                android:text="14.-Dispone el vehículo de su respectivo seguro actualizado y vigente."
                 android:textColor="@android:color/background_dark"
                 android:textSize="14sp" />
 
@@ -283,92 +283,6 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/cb1"
-                android:ems="10"
-                android:hint="Observaciones:"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/txt7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/editText4"
-                android:layout_marginTop="10dp"
-                android:text="7.-Se dispone de juego de herramientas/ llave de ruedas / gata para solventar emergencias."
-                android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/cb13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="SI" />
-
-                <CheckBox
-                    android:id="@+id/cb14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="NO" />
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/et7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb5"
-                android:ems="10"
-                android:hint="Observaciones:"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/txt8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:text="8.-Se dispone de botiquin de primeros auxilios."
-                android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/cb15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="SI" />
-
-                <CheckBox
-                    android:id="@+id/cb16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="NO" />
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/et8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb5"
-                android:layout_weight="1"
                 android:ems="10"
                 android:hint="Observaciones:"
                 android:inputType="textPersonName" />

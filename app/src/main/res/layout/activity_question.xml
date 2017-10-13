@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/preguntas"
+    android:background="@drawable/cuestionario"
     tools:context="com.example.marvinloco.aplicativologistico.Principal">
 
 
@@ -39,7 +39,7 @@
 
                 <CheckBox
                     android:id="@+id/cb1"
-                    android:layout_width="217dp"
+                    android:layout_width="189dp"
                     android:layout_height="wrap_content"
                     android:layout_alignLeft="@+id/cb5"
                     android:layout_alignStart="@+id/cb5"
@@ -167,7 +167,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="4.-Posee Orden de circulación con el nombre, grado, función y legalizada por el Comandante de Unidad. "
+                android:text="4.-Dispone de orden de marcha."
                 android:textColor="@android:color/background_dark"
                 android:textSize="14sp" />
 
@@ -209,7 +209,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:text="5.-Las llantas del vehículo se encuentran en buen estado."
+                android:text="5.-Posee Orden de circulación con el nombre, grado, función y legalizada por el Comandante de Unidad."
                 android:textColor="@android:color/background_dark"
                 android:textSize="14sp" />
 
@@ -252,7 +252,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="17dp"
-                android:text="6.-Se dispone de llanta de emergencia en buen estado."
+                android:text="6.-Las llantas del vehículo se encuentran en buen estado."
                 android:textColor="@android:color/background_dark"
                 android:textSize="14sp" />
 
@@ -295,7 +295,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="7.-Se dispone de juego de herramientas/ llave de ruedas / gata para solventar emergencias."
+                android:text="7.-Se dispone de llanta de emergencia en buen estado."
                 android:textColor="@android:color/background_dark"
                 android:textSize="14sp" />
 
@@ -337,7 +337,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:text="8.-Se dispone de botiquin de primeros auxilios."
+                android:text="8.-Se dispone de juego de herramientas/ llave de ruedas / gata para solventar emergencias."
                 android:textColor="@android:color/background_dark"
                 android:textSize="14sp" />
 

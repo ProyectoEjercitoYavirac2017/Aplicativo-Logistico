@@ -6,10 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Cuestionario extends AppCompatActivity {
-
+public class Cuestionario_2 extends AppCompatActivity {
     Button btn_1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +19,8 @@ public class Cuestionario extends AppCompatActivity {
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent itemintent = new Intent(Cuestionario.this, Cuestionario_1.class);
-                Cuestionario.this.startActivity(itemintent);
+                Intent itemintent = new Intent(Cuestionario_2.this, Cuestionario_3.class);
+                Cuestionario_2.this.startActivity(itemintent);
                 finish();
             }
         });
