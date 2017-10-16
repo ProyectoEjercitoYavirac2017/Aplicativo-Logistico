@@ -26,11 +26,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="16.-Si el vehículo va a transportar personal."
+                android:text="15.-Si el vehículo va a transportar personal."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/txt2"
@@ -38,11 +37,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="-El numérico de personal es acorde a la capacidad y tipo de vehículo."
+                android:text=" -El numérico de personal es acorde a la capacidad y tipo de vehículo."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -53,8 +51,6 @@
                     android:id="@+id/cb1"
                     android:layout_width="163dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/cb5"
-                    android:layout_alignStart="@+id/cb5"
                     android:layout_below="@+id/txt3"
                     android:text="SI" />
 
@@ -62,9 +58,6 @@
                     android:id="@+id/cb2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt3"
-                    android:layout_toEndOf="@+id/et1"
-                    android:layout_toRightOf="@+id/et1"
                     android:layout_weight="1"
                     android:text="NO APLICA" />
 
@@ -76,7 +69,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb5"
                 android:ems="10"
                 android:hint="Observaciones:"
                 android:inputType="textPersonName" />
@@ -88,9 +80,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:text="-Si el personal va armado se realizó la verificación de descargo previo al embarque."
+                android:text=" -Si el personal va armado se realizó la verificación de descargo previo al embarque."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -108,9 +100,6 @@
                     android:id="@+id/cb4"
                     android:layout_width="99dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt7"
-                    android:layout_toEndOf="@+id/et1"
-                    android:layout_toRightOf="@+id/et1"
                     android:layout_weight="1"
                     android:text="NO APLICA" />
 
@@ -122,7 +111,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb5"
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Observaciones:"
@@ -136,9 +124,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="17dp"
-                android:text="17.-Si el vehículo va a transportar lubricantes, combustibles o material inflamable."
+                android:text=" 16.-Si el vehículo va a transportar lubricantes, combustibles o material inflamable."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp"  />
+                android:textSize="18sp"  />
 
             <TextView
                 android:id="@+id/txt5"
@@ -148,9 +136,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="17dp"
-                android:text="-El tipo de vehículo se encuentra acorde al tipo de carga."
+                android:text=" -El tipo de vehículo se encuentra acorde al tipo de carga."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -178,7 +166,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/checkBox10"
                 android:ems="10"
                 android:hint="Observaciones:"
                 android:inputType="textPersonName" />
@@ -189,11 +176,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="-Se verificarón seguros / valvulas / llaves de paso de la carga. "
+                android:text=" -Se verificarón seguros / valvulas / llaves de paso de la carga. "
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -221,7 +207,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb5"
                 android:ems="10"
                 android:hint="Observaciones:"
                 android:inputType="textPersonName" />
@@ -233,9 +218,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:text="-El personal tiene conocimiento y capacitación sobre el manejo del tipo de carga que transporta."
+                android:text=" -El personal tiene conocimiento y capacitación sobre el manejo del tipo de carga que transporta."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -263,7 +248,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb5"
                 android:ems="10"
                 android:hint="Observaciones:"
                 android:inputType="textPersonName" />
@@ -274,8 +258,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="19dp"
-                android:layout_toEndOf="@+id/cb4"
-                android:layout_toRightOf="@+id/cb4"
                 android:text="Siguiente" />
         </LinearLayout>
     </ScrollView>

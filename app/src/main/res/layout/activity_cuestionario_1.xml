@@ -28,9 +28,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="9.-Se dispone de medios de comunicación y contactos con quienes comunicarse en caso de emergencia."
+                android:text=" 9.-Se dispone de medios de comunicación y contactos con quienes comunicarse en caso de emergencia."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,8 +41,6 @@
                     android:id="@+id/cb1"
                     android:layout_width="186dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/cb5"
-                    android:layout_alignStart="@+id/cb5"
                     android:layout_below="@+id/txt3"
                     android:text="SI" />
 
@@ -64,7 +62,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb5"
                 android:ems="10"
                 android:hint="Observaciones:"
                 android:inputType="textPersonName" />
@@ -76,9 +73,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:text="10.-Se dispone de triángulo reflectivo de seguridad de parqueo y linterna."
+                android:text=" 10.-Se dispone de triángulo reflectivo de seguridad de parqueo y linterna."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -124,9 +121,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="17dp"
-                android:text="11.-Se dispone de extintor contra incendios vigente."
+                android:text=" 11.-Se dispone de extintor contra incendios vigente."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -167,9 +164,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="12.-El sistema de luces y eléctrico se encuentra en buen estado. "
+                android:text=" 12.-El sistema de luces y eléctrico se encuentra en buen estado. "
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -197,7 +194,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb5"
                 android:ems="10"
                 android:hint="Observaciones:"
                 android:inputType="textPersonName" />
@@ -209,9 +205,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:text="13.-El sistema de plumas y dispensor de agua del parabrisas se encuentra en buen estado."
+                android:text=" 13.-El sistema de plumas y dispensor de agua del parabrisas se encuentra en buen estado."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -252,9 +248,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="17dp"
-                android:text="14.-Se realizó el chequeo de líquido de frenos , aceite, agua de radiador, refrigerante, combustible."
+                android:text=" 14.-Se realizó el chequeo de líquido de frenos , aceite, agua de radiador, refrigerante, combustible."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -282,7 +278,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb1"
                 android:ems="10"
                 android:hint="Observaciones:"
                 android:inputType="textPersonName" />
@@ -293,11 +288,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="15.-Dispone el vehículo de su respectivo seguro actualizado y vigente.."
+                android:text=" 15.-Dispone el vehículo de su respectivo seguro actualizado y vigente.."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -336,8 +330,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="19dp"
-                android:layout_toEndOf="@+id/cb4"
-                android:layout_toRightOf="@+id/cb4"
                 android:text="Siguiente" />
         </LinearLayout>
     </ScrollView>

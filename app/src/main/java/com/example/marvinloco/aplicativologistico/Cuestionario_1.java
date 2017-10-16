@@ -11,7 +11,7 @@ public class Cuestionario_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cuestionario);
+        setContentView(R.layout.activity_cuestionario_1);
 
 
         btn_1 = (Button) findViewById(R.id.btn_1);

@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:maxLength="30"
         android:hint="Nombres Completos"
         android:inputType="textPersonName"
         android:layout_marginTop="18dp"
@@ -38,16 +39,18 @@
         android:layout_toEndOf="@+id/imageView6"
         android:layout_toRightOf="@+id/imageView6"
         android:ems="10"
+        android:maxLength="10"
         android:hint="Cédula"
-        android:inputType="textPersonName" />
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/etcont"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:maxLength="15"
         android:hint="Contraseña"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:layout_marginTop="12dp"
         android:layout_below="@+id/btn_1"
         android:layout_alignLeft="@+id/btn_1"

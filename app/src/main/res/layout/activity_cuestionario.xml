@@ -28,9 +28,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="1.-El conductor dispone de licencia profesional actualizada y de acuerdo a la categoria."
+                android:text=" 1.-El conductor dispone de licencia profesional actualizada y de acuerdo a la categoria."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,18 +41,12 @@
                     android:id="@+id/cb1"
                     android:layout_width="217dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/cb5"
-                    android:layout_alignStart="@+id/cb5"
-                    android:layout_below="@+id/txt3"
                     android:text="SI" />
 
                 <CheckBox
                     android:id="@+id/cb2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt3"
-                    android:layout_toEndOf="@+id/et1"
-                    android:layout_toRightOf="@+id/et1"
                     android:layout_weight="1"
                     android:text="NO" />
 
@@ -64,10 +58,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb5"
                 android:ems="10"
                 android:hint="Observaciones:"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/darker_gray" />
 
             <TextView
                 android:id="@+id/txt2"
@@ -76,9 +70,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:text="2.-El conductor se realizó el chequeo médico."
+                android:text=" 2.-El conductor se realizó el chequeo médico."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -124,9 +118,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="17dp"
-                android:text="3.-Posee Matrícula del vehículo actualizada."
+                android:text=" 3.-Posee Matrícula del vehículo actualizada."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -167,9 +161,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="4.-Posee Orden de circulación con el nombre, grado, función y legalizada por el Comandante de Unidad. "
+                android:text=" 4.-Posee Orden de circulación con el nombre, grado, función y legalizada por el Comandante de Unidad. "
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -197,7 +191,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb5"
                 android:ems="10"
                 android:hint="Observaciones:"
                 android:inputType="textPersonName" />
@@ -209,9 +202,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:text="5.-Las llantas del vehículo se encuentran en buen estado."
+                android:text=" 5.-Las llantas del vehículo se encuentran en buen estado."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -252,9 +245,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="17dp"
-                android:text="6.-Se dispone de llanta de emergencia en buen estado."
+                android:text=" 6.-Se dispone de llanta de emergencia en buen estado."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -282,7 +275,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb1"
                 android:ems="10"
                 android:hint="Observaciones:"
                 android:inputType="textPersonName" />
@@ -293,11 +285,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
-                android:text="7.-Se dispone de juego de herramientas/ llave de ruedas / gata para solventar emergencias."
+                android:text=" 7.-Se dispone de juego de herramientas/ llave de ruedas / gata para solventar emergencias."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -337,9 +328,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:text="8.-Se dispone de botiquin de primeros auxilios."
+                android:text=" 8.-Se dispone de botiquin de primeros auxilios."
                 android:textColor="@android:color/background_dark"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -379,11 +370,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="19dp"
-                android:layout_toEndOf="@+id/cb4"
-                android:layout_toRightOf="@+id/cb4"
                 android:text="Siguiente" />
         </LinearLayout>
     </ScrollView>
 
 </RelativeLayout>
+
+
 

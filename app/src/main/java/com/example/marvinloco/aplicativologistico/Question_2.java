@@ -12,6 +12,7 @@ public class Question_2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_2);
+        btn_1 = (Button) findViewById(R.id.btn_1);
 
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -12,6 +12,8 @@ public class Question_3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_3);
+        btn_1 = (Button) findViewById(R.id.btn_1);
+
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

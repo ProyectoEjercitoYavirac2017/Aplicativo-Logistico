@@ -34,14 +34,13 @@ public class Login extends AppCompatActivity {
             String usua=fila.getString(0);
             String pass=fila.getString(1);
              if (usuario.equals(usua)&& contrasena.equals(pass)) {
-                 Intent ven=new Intent(Login.this,Menu.class);
+                 Intent ven=new Intent(Login.this,Datos.class);
                  startActivity(ven);
-                 Toast.makeText(Login.this, "Ingreso exitoso", Toast.LENGTH_LONG).show();
+                 Toast.makeText(getApplicationContext(), "Ingreso exitoso", Toast.LENGTH_LONG).show();
              }
              else {
-                 Toast.makeText(Login.this, "Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show();
-                 edi1.setText("");
-                 edi2.setText("");
+
+                 Toast.makeText(getApplicationContext(), "Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show();
              }
              }
 
