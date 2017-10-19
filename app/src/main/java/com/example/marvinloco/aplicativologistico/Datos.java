@@ -20,7 +20,7 @@ public class Datos extends AppCompatActivity {
         setContentView(R.layout.activity_datos);
 
         Spinner spinner = (Spinner) findViewById(R.id.sp1);
-        String[] valores = {"Brigada 1","Brigada 2","Brigada Independencia","Cuartel 1","Cuartel 2","Comando General"};
+        String[] valores = {" ","Brigada 1","Brigada 2","Brigada Independencia","Cuartel 1","Cuartel 2","Comando General"};
         spinner.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, valores));
         spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
                                               @Override
@@ -35,7 +35,7 @@ public class Datos extends AppCompatActivity {
         });
 
         Spinner spinner1 = (Spinner) findViewById(R.id.sp2);
-        String[] valores1 = {"Camioneta","Furgón","Camión","Vehículo de combate","Carro Blindado"};
+        String[] valores1 = {" ","Camioneta","Furgón","Camión","Vehículo de combate","Carro Blindado"};
         spinner1.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, valores1));
         spinner1.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override

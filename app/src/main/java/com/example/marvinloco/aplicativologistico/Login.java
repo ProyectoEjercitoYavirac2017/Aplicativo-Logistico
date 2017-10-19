@@ -33,15 +33,19 @@ public class Login extends AppCompatActivity {
          if (fila.moveToFirst()){
             String usua=fila.getString(0);
             String pass=fila.getString(1);
-             if (usuario.equals(usua)&& contrasena.equals(pass)) {
-                 Intent ven=new Intent(Login.this,Datos.class);
-                 startActivity(ven);
-                 Toast.makeText(getApplicationContext(), "Ingreso exitoso", Toast.LENGTH_LONG).show();
+             if (edi1.getText().toString().equals(usua)&& edi2.getText().toString().equals(pass)) {
+
+                 Toast.makeText(getApplicationContext(),"Ingreso exitoso", Toast.LENGTH_LONG).show();
              }
              else {
 
-                 Toast.makeText(getApplicationContext(), "Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show();
+                 Toast.makeText(getApplicationContext(),"Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show();
              }
+
+                 Intent can=new Intent(Login.this,Datos.class);
+                 startActivity(can);
+
+
              }
 
          }
@@ -50,6 +54,8 @@ public class Login extends AppCompatActivity {
         startActivity(ven);
     }
 }
+
+
 
 
 

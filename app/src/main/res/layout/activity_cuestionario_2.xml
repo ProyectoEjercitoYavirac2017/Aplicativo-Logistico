@@ -18,7 +18,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:text=" - Desde la pregunta 16 hasta la 18 escoja una de ellas según sea el caso que se va aplicar."
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/txt1"
@@ -27,98 +39,131 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="10dp"
-                android:text=" 15.-Si el vehículo va a transportar personal."
+                android:text=" 16.-Si el vehículo va a transportar personal."
                 android:textColor="@android:color/background_dark"
-                android:textSize="18sp"/>
-
-            <TextView
-                android:id="@+id/txt2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="10dp"
-                android:text=" -El numérico de personal es acorde a la capacidad y tipo de vehículo."
-                android:textColor="@android:color/background_dark"
-                android:textSize="16sp"/>
+                android:textSize="18sp" />
 
             <LinearLayout
+                android:id="@+id/layout1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:visibility="gone">
 
-                <CheckBox
-                    android:id="@+id/cb1"
-                    android:layout_width="163dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt3"
-                    android:text="SI" />
-
-                <CheckBox
-                    android:id="@+id/cb2"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="NO APLICA" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="10dp"
+                        android:text=" -El numérico de personal es acorde a la capacidad y tipo de vehículo."
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="SI" />
+
+                        <CheckBox
+                            android:id="@+id/cb4"
+                            android:layout_width="99dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt3"
+                            android:layout_toEndOf="@+id/et1"
+                            android:layout_toRightOf="@+id/et1"
+                            android:layout_weight="1"
+                            android:text="NO APLICA" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Observaciones:"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text=" -Si el personal va armado se realizó la verificación de descargo previo al embarque."
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <CheckBox
+                            android:id="@+id/cb1"
+                            android:layout_width="163dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt3"
+                            android:text="SI" />
+
+                        <CheckBox
+                            android:id="@+id/cb2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="NO APLICA" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/cb5"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Observaciones:"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
-            <EditText
-                android:id="@+id/et1"
+            <Button
+                android:id="@+id/btn_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:ems="10"
-                android:hint="Observaciones:"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/txt3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:text=" -Si el personal va armado se realizó la verificación de descargo previo al embarque."
-                android:textColor="@android:color/background_dark"
-                android:textSize="16sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/cb3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="SI" />
-
-                <CheckBox
-                    android:id="@+id/cb4"
-                    android:layout_width="99dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt7"
-                    android:layout_toEndOf="@+id/et1"
-                    android:layout_toRightOf="@+id/et1"
-                    android:layout_weight="1"
-                    android:text="NO APLICA" />
-
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/et2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb5"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="Observaciones:"
-                android:inputType="textPersonName" />
+                android:layout_margin="30dp"
+                android:layout_marginBottom="19dp"
+                android:text="seleccione pregunta 16" />
 
             <TextView
                 android:id="@+id/txt4"
@@ -128,144 +173,355 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="17dp"
-                android:text=" 16.-Si el vehículo va a transportar lubricantes, combustibles o material inflamable."
+                android:text=" 17.-Si el vehículo va a transportar lubricantes, combustibles o material inflamable."
                 android:textColor="@android:color/background_dark"
-                android:textSize="18sp"  />
-
-            <TextView
-                android:id="@+id/txt5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="17dp"
-                android:text=" -El tipo de vehículo se encuentra acorde al tipo de carga."
-                android:textColor="@android:color/background_dark"
-                android:textSize="16sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
+                android:id="@+id/layout2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:visibility="gone">
 
-                <CheckBox
-                    android:id="@+id/cb5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="SI" />
+                    android:orientation="vertical">
 
-                <CheckBox
-                    android:id="@+id/cb6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="NO APLICA" />
+                    <TextView
+                        android:id="@+id/txt5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="17dp"
+                        android:layout_weight="1"
+                        android:text=" -El tipo de vehículo se encuentra acorde al tipo de carga."
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SI" />
+
+                    <EditText
+                        android:id="@+id/et3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Observaciones:"
+                        android:inputType="textPersonName" />
+
+                    <CheckBox
+                        android:id="@+id/cb6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NO APLICA" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/editText4"
+                        android:layout_marginTop="10dp"
+                        android:text=" -Se verificarón seguros / valvulas / llaves de paso de la carga. "
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="SI" />
+
+                        <CheckBox
+                            android:id="@+id/cb8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="NO APLICA" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Observaciones:"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text=" -El personal tiene conocimiento y capacitación sobre el manejo del tipo de carga que transporta."
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="SI" />
+
+                        <CheckBox
+                            android:id="@+id/cb10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="NO APLICA" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/cb5"
+                        android:ems="10"
+                        android:hint="Observaciones:"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
             </LinearLayout>
-
-            <EditText
-                android:id="@+id/et3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/checkBox10"
-                android:ems="10"
-                android:hint="Observaciones:"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/txt6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/editText4"
-                android:layout_marginTop="10dp"
-                android:text=" -Se verificarón seguros / valvulas / llaves de paso de la carga. "
-                android:textColor="@android:color/background_dark"
-                android:textSize="16sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/cb7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="SI" />
-
-                <CheckBox
-                    android:id="@+id/cb8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="NO APLICA" />
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/et4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:ems="10"
-                android:hint="Observaciones:"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/txt7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:text=" -El personal tiene conocimiento y capacitación sobre el manejo del tipo de carga que transporta."
-                android:textColor="@android:color/background_dark"
-                android:textSize="16sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/cb9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="SI" />
-
-                <CheckBox
-                    android:id="@+id/cb10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="NO APLICA" />
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/et5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/cb5"
-                android:ems="10"
-                android:hint="Observaciones:"
-                android:inputType="textPersonName" />
 
             <Button
-                android:id="@+id/btn_1"
+                android:id="@+id/btn_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
+                android:layout_margin="30dp"
                 android:layout_marginBottom="19dp"
+                android:text=" Seleccione pregunta 17" />
+
+            <TextView
+                android:id="@+id/txt8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:text=" 18.-Si el vehículo va a transportar carga de cualquier tipo."
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="10dp"
+                        android:text=" -El peso de la carga es acorde a la capacidad y tipo de vehículo."
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb11"
+                            android:layout_width="177dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt3"
+                            android:text="SI" />
+
+                        <CheckBox
+                            android:id="@+id/cb12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.77"
+                            android:text="NO APLICA" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Observaciones:"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text=" -La carga se encuentra correctamente asegurada."
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="SI" />
+
+                        <CheckBox
+                            android:id="@+id/cb14"
+                            android:layout_width="99dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.77"
+                            android:text="NO APLICA" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Observaciones:"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="17dp"
+                        android:text=" -Las medidas de la carga se encuentra dentro del límite de la plataforma."
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="SI" />
+
+                        <CheckBox
+                            android:id="@+id/cb16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.77"
+                            android:text="NO APLICA" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Observaciones:"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginBottom="19dp"
+                android:text=" Seleccione pregunta 18" />
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginTop="56dp"
                 android:text="Siguiente" />
+
         </LinearLayout>
     </ScrollView>
 

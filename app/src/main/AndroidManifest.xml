@@ -63,7 +63,8 @@
         <activity android:name=".Question_1" />
         <activity android:name=".Question_2" />
         <activity android:name=".Question_3" />
-        <activity android:name=".Datos"></activity>
+        <activity android:name=".Datos" />
+        <activity android:name=".Final"></activity>
     </application>
 
 </manifest>

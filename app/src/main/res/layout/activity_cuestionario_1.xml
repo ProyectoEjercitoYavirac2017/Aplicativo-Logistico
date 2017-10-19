@@ -93,7 +93,7 @@
                     android:id="@+id/cb4"
                     android:layout_width="99dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt7"
+                    android:layout_below="@+id/txt3"
                     android:layout_toEndOf="@+id/et1"
                     android:layout_toRightOf="@+id/et1"
                     android:text="NO"
@@ -283,7 +283,7 @@
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/txt7"
+                android:id="@+id/txt3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -329,7 +329,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
+                android:layout_margin="30dp"
                 android:layout_marginBottom="19dp"
+                android:onClick="onclick"
                 android:text="Siguiente" />
         </LinearLayout>
     </ScrollView>

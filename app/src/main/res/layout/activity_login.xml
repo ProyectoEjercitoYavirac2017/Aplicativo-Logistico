@@ -19,7 +19,7 @@ tools:context="com.example.marvinloco.aplicativologistico.Principal">
         android:fontFamily="sans-serif"
         android:hint="Contraseña"
         android:maxLength="15"
-        android:inputType="text" />
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btn_1"
