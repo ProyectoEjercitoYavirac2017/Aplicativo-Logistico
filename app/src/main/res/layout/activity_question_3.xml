@@ -27,20 +27,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="10dp"
-                android:text=" 17.-Si el vehículo va a transportar carga de cualquier tipo."
+                android:text=" 18.-De acuerdo al tipo de carga, el vehículo cumple con las normas de seguridad establecidas."
                 android:textColor="@android:color/background_dark"
-                android:textSize="18sp"  />
-
-            <TextView
-                android:id="@+id/txt2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="10dp"
-                android:text=" -El peso de la carga es acorde a la capacidad y tipo de vehículo."
-                android:textColor="@android:color/background_dark"
-                android:textSize="16sp"  />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -48,8 +37,6 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-
-
                     android:id="@+id/cb1"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
@@ -61,7 +48,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.77"
                     android:text="NO APLICA" />
+
             </LinearLayout>
+
 
             <EditText
                 android:id="@+id/et1"
@@ -74,134 +63,7 @@
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/txt3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="10dp"
-                android:text=" -La carga se encuentra correctamente asegurada."
-                android:textColor="@android:color/background_dark"
-                android:textSize="16sp"  />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/cb3"
-                    android:layout_width="177dp"
-                    android:layout_height="wrap_content"
-                    android:text="SI" />
-
-                <CheckBox
-                    android:id="@+id/cb4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.77"
-                    android:text="NO APLICA"  />
-
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/et2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:ems="10"
-                android:hint="Observaciones:"
-                android:inputType="textPersonName"/>
-
-            <TextView
-                android:id="@+id/txt4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/editText4"
-                android:layout_marginTop="10dp"
-                android:text=" -Las medidas de la carga se encuentra dentro del lí,ite de la plataforma."
-                android:textColor="@android:color/background_dark"
-                android:textSize="16sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/cb5"
-                    android:layout_width="177dp"
-                    android:layout_height="wrap_content"
-                    android:text="SI" />
-
-                <CheckBox
-                    android:id="@+id/cb6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.77"
-                    android:text="NO APLICA" />
-
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/et3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:ems="10"
-                android:hint="Observaciones:"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/txt5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="10dp"
-                android:text=" 18.-De acuerdo al tipo de carga, el vehículo cumple con las normas de seguridad establecidas."
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/cb7"
-                    android:layout_width="177dp"
-                    android:layout_height="wrap_content"
-                    android:text="SI" />
-
-                <CheckBox
-                    android:id="@+id/cb8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.77"
-                    android:text="NO APLICA" />
-
-            </LinearLayout>
-
-
-            <EditText
-                android:id="@+id/et4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:ems="10"
-                android:hint="Observaciones:"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/txt6"
+                android:id="@+id/txt2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -218,13 +80,13 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/cb9"
+                    android:id="@+id/cb3"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:text="SI" />
 
                 <CheckBox
-                    android:id="@+id/cb10"
+                    android:id="@+id/cb4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.1"
@@ -233,7 +95,7 @@
             </LinearLayout>
 
             <EditText
-                android:id="@+id/et5"
+                android:id="@+id/et2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -259,13 +121,13 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/cb11"
+                    android:id="@+id/cb5"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:text="SI" />
 
                 <CheckBox
-                    android:id="@+id/cb12"
+                    android:id="@+id/cb6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.1"
@@ -274,7 +136,7 @@
 
             <EditText
 
-                android:id="@+id/et6"
+                android:id="@+id/et3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -285,22 +147,23 @@
 
             <TextView
 
-                android:id="@+id/txt8"
+                android:id="@+id/txt4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:text=" NOTA: Si el vehículo no cumple con uno de los items, es responsabilidad única del OSIS de la unidad legalizar el movimiento vehicular previo autorizacón del Sr. Jefe de Estado Mayor u Oficial Jefe de Control."
                 android:textColor="@android:color/background_dark"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
 
             <Button
-                android:id="@+id/btn_1"
+                android:id="@+id/btn_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
+                android:layout_margin="30dp"
                 android:layout_marginBottom="19dp"
                 android:text="Finalizar" />
         </LinearLayout>

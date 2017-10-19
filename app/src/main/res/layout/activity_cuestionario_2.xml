@@ -19,7 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:visibility="visible">
+            android:visibility="visible"
+            android:weightSum="1">
 
             <TextView
                 android:id="@+id/textView2"
@@ -32,16 +33,15 @@
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/txt1"
+            <Button
+                android:id="@+id/btn_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="10dp"
-                android:text=" 16.-Si el vehículo va a transportar personal."
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:layout_margin="15dp"
+                android:text="16.- Si el vehículo va a transportar personal."
+                android:layout_weight="0.09"
+                android:textSize="12sp"/>
+
 
             <LinearLayout
                 android:id="@+id/layout1"
@@ -158,24 +158,13 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_1"
+                android:id="@+id/btn_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="30dp"
-                android:layout_marginBottom="19dp"
-                android:text="seleccione pregunta 16" />
+                android:layout_margin="15dp"
+                android:textSize="12sp"
+                android:text="17.-Si el vehículo va a transportar lubricantes, combustibles o material inflamable." />
 
-            <TextView
-                android:id="@+id/txt4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="17dp"
-                android:text=" 17.-Si el vehículo va a transportar lubricantes, combustibles o material inflamable."
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
 
             <LinearLayout
                 android:id="@+id/layout2"
@@ -287,7 +276,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/txt3"
+                        android:id="@+id/txt7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
@@ -332,23 +321,12 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_2"
+                android:id="@+id/btn_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="30dp"
-                android:layout_marginBottom="19dp"
-                android:text=" Seleccione pregunta 17" />
-
-            <TextView
-                android:id="@+id/txt8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="10dp"
-                android:text=" 18.-Si el vehículo va a transportar carga de cualquier tipo."
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:layout_margin="15dp"
+                android:textSize="12sp"
+                android:text="18.-Si el vehículo va a transportar carga de cualquier tipo." />
 
             <LinearLayout
                 android:id="@+id/layout3"
@@ -507,18 +485,10 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="30dp"
-                android:layout_marginBottom="19dp"
-                android:text=" Seleccione pregunta 18" />
-
-            <Button
                 android:id="@+id/btn_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="30dp"
+                android:layout_margin="15dp"
                 android:layout_marginTop="56dp"
                 android:text="Siguiente" />
 

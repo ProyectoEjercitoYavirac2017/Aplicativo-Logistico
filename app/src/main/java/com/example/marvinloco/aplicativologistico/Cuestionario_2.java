@@ -55,6 +55,7 @@ public class Cuestionario_2 extends AppCompatActivity implements View.OnClickLis
                         lay1.setVisibility(View.VISIBLE);
                         lay2.setVisibility(View.GONE);
                         lay3.setVisibility(View.GONE);
+
                     }else
                     {
                         lay1.setVisibility(View.GONE);
@@ -66,6 +67,7 @@ public class Cuestionario_2 extends AppCompatActivity implements View.OnClickLis
                         lay2.setVisibility(View.VISIBLE);
                         lay1.setVisibility(View.GONE);
                         lay3.setVisibility(View.GONE);
+
                     }else
                     {
                         lay2.setVisibility(View.GONE);
@@ -273,7 +275,7 @@ public class Cuestionario_2 extends AppCompatActivity implements View.OnClickLis
 
             });
 
-        btn_4 = (Button) findViewById(R.id.btn_1);
+        btn_4 = (Button) findViewById(R.id.btn_4);
 
         btn_4.setOnClickListener(new View.OnClickListener() {
             @Override

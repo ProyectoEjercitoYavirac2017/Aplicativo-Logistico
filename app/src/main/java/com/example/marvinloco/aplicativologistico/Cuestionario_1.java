@@ -9,7 +9,7 @@ import android.widget.CheckBox;
 import android.widget.Toast;
 
 public class Cuestionario_1 extends AppCompatActivity {
-    CheckBox c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16;
+    CheckBox c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14;
     Button btn_1;
 
     @Override
@@ -31,7 +31,7 @@ public class Cuestionario_1 extends AppCompatActivity {
         c12 = (CheckBox) findViewById(R.id.cb12);
         c13 = (CheckBox) findViewById(R.id.cb13);
         c14 = (CheckBox) findViewById(R.id.cb14);
-        btn_1 = (Button) findViewById(R.id.btn_1);
+        btn_1 = (Button) findViewById(R.id.btn_4);
 
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -199,7 +199,7 @@ public class Cuestionario_1 extends AppCompatActivity {
         });
 
 
-        btn_1 = (Button) findViewById(R.id.btn_1);
+        btn_1 = (Button) findViewById(R.id.btn_4);
 
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override

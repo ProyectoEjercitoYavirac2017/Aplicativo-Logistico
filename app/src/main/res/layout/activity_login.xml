@@ -22,7 +22,7 @@ tools:context="com.example.marvinloco.aplicativologistico.Principal">
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/btn_1"
+        android:id="@+id/btn_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/etcontrasena"
@@ -39,7 +39,7 @@ tools:context="com.example.marvinloco.aplicativologistico.Principal">
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_below="@+id/btn_1"
+        android:layout_below="@+id/btn_4"
         android:layout_centerHorizontal="true"
         android:fontFamily="sans-serif-smallcaps"
         android:onClick="registrar"
@@ -59,7 +59,7 @@ tools:context="com.example.marvinloco.aplicativologistico.Principal">
     android:layout_width="40dp"
     android:layout_height="wrap_content"
     app:srcCompat="@mipmap/ic_locker"
-    android:layout_above="@+id/btn_1"
+    android:layout_above="@+id/btn_4"
     android:layout_toLeftOf="@+id/etcontrasena"
     android:layout_toStartOf="@+id/etcontrasena" />
 
