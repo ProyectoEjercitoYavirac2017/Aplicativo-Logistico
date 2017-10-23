@@ -45,7 +45,8 @@
         </activity>
         <activity
             android:name=".Cuestionario"
-            android:label="Chequeo Movimiento Vehicular">
+            android:label="Chequeo Movimiento Vehicular"
+            android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -57,13 +58,20 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".Cuestionario_1" />
-        <activity android:name=".Cuestionario_2" />
-        <activity android:name=".Cuestionario_3" />
-        <activity android:name=".Question_1" />
-        <activity android:name=".Question_2" />
-        <activity android:name=".Question_3" />
-        <activity android:name=".Datos" />
+        <activity android:name=".Cuestionario_1"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".Cuestionario_2"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".Cuestionario_3"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".Question_1"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".Question_2"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".Question_3"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".Datos"
+            android:windowSoftInputMode="adjustNothing"/>
         <activity android:name=".Final"></activity>
     </application>
 

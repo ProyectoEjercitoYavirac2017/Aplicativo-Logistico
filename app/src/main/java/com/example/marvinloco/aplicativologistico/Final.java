@@ -1,6 +1,7 @@
 package com.example.marvinloco.aplicativologistico;
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,12 +18,18 @@ public class Final extends AppCompatActivity {
         setContentView(R.layout.activity_final);
 
         btn_3 = (Button) findViewById(R.id.btn_3);
-
         btn_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.exit(0);    }
+                System.exit(0);
+                finish(); }
+
+
         });
+
+
 
     }
 }
+
+

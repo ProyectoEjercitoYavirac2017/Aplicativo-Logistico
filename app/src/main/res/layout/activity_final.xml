@@ -11,9 +11,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,38 +32,42 @@
                 android:layout_marginTop="10dp"
                 android:layout_weight="0.34"
                 android:text=" - Ha finalizado con exito el chequeo escoga la actividad que desea realizar."
-                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
                 android:textSize="25sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_weight="0.06"
+                android:orientation="horizontal"
+                android:weightSum="1">
 
                 <Button
-                    android:id="@+id/btn_4"
+                    android:id="@+id/etcedu"
+                    style="@android:style/Widget.Button.Inset"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="56dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.19"
                     android:text="Imprimir" />
 
                 <Button
                     android:id="@+id/btn_2"
-                    android:layout_width="wrap_content"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="2dp"
-                    android:layout_marginBottom="56dp"
-                    android:layout_weight="1"
-                    android:text="Enviar al correo personal" />
+                    android:layout_marginLeft="20dp"
+                    android:text="Enviar a E-mail" />
 
             </LinearLayout>
 
             <Button
                 android:id="@+id/btn_3"
+                style="@android:style/Widget.Holo.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="19dp"
+                android:layout_margin="20dp"
                 android:layout_weight="0.34"
                 android:text="Salir" />
 

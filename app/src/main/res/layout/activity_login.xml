@@ -11,69 +11,68 @@ tools:context="com.example.marvinloco.aplicativologistico.Principal">
     <EditText
         android:id="@+id/etcontrasena"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etusuario"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@mipmap/ic_locker"
         android:ems="10"
         android:fontFamily="sans-serif"
         android:hint="Contraseña"
+        android:inputType="textPassword"
         android:maxLength="15"
-        android:inputType="textPassword" />
+        android:layout_above="@+id/etcedu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp" />
 
     <Button
-        android:id="@+id/btn_4"
+        android:id="@+id/etcedu"
+        style="@android:style/Widget.Holo.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/etcontrasena"
-        android:layout_alignLeft="@+id/etcontrasena"
-        android:layout_alignRight="@+id/etcontrasena"
-        android:layout_alignStart="@+id/etcontrasena"
-        android:layout_below="@+id/etcontrasena"
-        android:layout_marginTop="14dp"
         android:onClick="ingresar"
-        android:text="INGRESAR" />
+        android:text="INGRESAR"
+        android:layout_above="@+id/btn_2"
+        android:layout_alignLeft="@+id/etcontrasena"
+        android:layout_alignStart="@+id/etcontrasena"
+        android:layout_alignRight="@+id/etcontrasena"
+        android:layout_alignEnd="@+id/etcontrasena" />
 
     <Button
         android:id="@+id/btn_2"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_below="@+id/btn_4"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="sans-serif"
         android:onClick="registrar"
-        android:text="REGISTRAR" />
+        android:text="REGISTRAR"
+        android:textColor="@android:color/background_light" />
 
-<ImageView
-    android:id="@+id/imageView"
-    android:layout_width="35dp"
-    android:layout_height="wrap_content"
-    app:srcCompat="@mipmap/ic_person"
-    android:layout_alignBottom="@+id/etusuario"
-    android:layout_alignRight="@+id/imageView2"
-    android:layout_alignEnd="@+id/imageView2" />
-
-<ImageView
-    android:id="@+id/imageView2"
-    android:layout_width="40dp"
-    android:layout_height="wrap_content"
-    app:srcCompat="@mipmap/ic_locker"
-    android:layout_above="@+id/btn_4"
-    android:layout_toLeftOf="@+id/etcontrasena"
-    android:layout_toStartOf="@+id/etcontrasena" />
 
     <EditText
         android:id="@+id/etusuario"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/imageView"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_height="50dp"
+        android:drawableLeft="@mipmap/ic_person"
         android:ems="10"
         android:fontFamily="sans-serif"
-        android:maxLength="10"
         android:hint="Cédula"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:layout_marginBottom="47dp"
+        android:layout_alignBottom="@+id/etcontrasena"
+        android:layout_alignLeft="@+id/etcontrasena"
+        android:layout_alignStart="@+id/etcontrasena" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Inicio Sesión"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:layout_above="@+id/etusuario"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

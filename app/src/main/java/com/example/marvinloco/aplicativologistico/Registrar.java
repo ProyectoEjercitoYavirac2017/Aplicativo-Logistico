@@ -17,7 +17,7 @@ public class Registrar extends AppCompatActivity {
         setContentView(R.layout.activity_registrar);
 
         edi1 = (EditText) findViewById(R.id.etnomb);
-        edi2 = (EditText) findViewById(R.id.btn_4);
+        edi2 = (EditText) findViewById(R.id.etcedu);
         edi3 = (EditText) findViewById(R.id.etcont);
 
 

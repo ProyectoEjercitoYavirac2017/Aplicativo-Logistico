@@ -70,7 +70,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="17dp"
-                android:text=" 19.-El conductor pernocto 08 horas, antes de cumplir la comisión."
+                android:text=" 19.-El conductor pernocto ocho (8) horas, antes de cumplir la comisión."
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
 
@@ -111,7 +111,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="10dp"
-                android:text=" 20.-Considerando la hora de salida y el destino del vehículo, le permite cumplir su itinerario en horas luz(HASTA LAS 18:00)."
+                android:text=" 20.-Considerando la hora de salida y el destino del vehículo, le permite cumplir su itinerario en horas luz  (HASTA LAS 18:00)."
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
 
@@ -154,12 +154,14 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="30dp"
                 android:text=" NOTA: Si el vehículo no cumple con uno de los items, es responsabilidad única del OSIS de la unidad legalizar el movimiento vehicular previo autorizacón del Sr. Jefe de Estado Mayor u Oficial Jefe de Control."
-                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
                 android:textSize="18sp" />
 
 
             <Button
-                android:id="@+id/btn_4"
+                android:id="@+id/etcedu"
+                style="@android:style/Widget.Holo.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"

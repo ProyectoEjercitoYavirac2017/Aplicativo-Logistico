@@ -275,7 +275,7 @@ public class Cuestionario_2 extends AppCompatActivity implements View.OnClickLis
 
             });
 
-        btn_4 = (Button) findViewById(R.id.btn_4);
+        btn_4 = (Button) findViewById(R.id.etcedu);
 
         btn_4.setOnClickListener(new View.OnClickListener() {
             @Override

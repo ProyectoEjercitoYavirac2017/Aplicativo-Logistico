@@ -29,7 +29,7 @@ public class Question_1 extends AppCompatActivity {
         c10 = (CheckBox) findViewById(R.id.cb10);
         c11 = (CheckBox) findViewById(R.id.cb11);
         c12 = (CheckBox) findViewById(R.id.cb12);        
-        btn_1 = (Button) findViewById(R.id.btn_4);
+        btn_1 = (Button) findViewById(R.id.etcedu);
 
         c1.setOnClickListener(new View.OnClickListener() {
             @Override

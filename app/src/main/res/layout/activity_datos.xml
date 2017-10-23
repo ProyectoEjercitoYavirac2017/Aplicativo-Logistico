@@ -151,7 +151,7 @@
 
 
                 <TextView
-                    android:id="@+id/txt3"
+                    android:id="@+id/txt7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -176,34 +176,26 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="start"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/et4"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView7"
-                    android:layout_weight="1"
+                    android:id="@+id/txtFecha"
+                    android:layout_width="202dp"
+                    android:layout_height="52dp"
                     android:drawableLeft="@mipmap/ic_calendar"
+                    android:ems="10"
+                    android:inputType="none" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@mipmap/ic_clock"
                     android:ems="10"
                     android:inputType="time" />
 
-                <EditText
-                    android:id="@+id/et5"
-                    style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_below="@+id/textView7"
-                    android:layout_toEndOf="@+id/editText6"
-                    android:layout_toRightOf="@+id/editText6"
-                    android:layout_weight="1"
-                    android:drawableLeft="@mipmap/ic_clock"
-                    android:ems="10"
-                    android:inputType="date" />
             </LinearLayout>
 
             <TextView
@@ -234,7 +226,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btn_4"
+                    android:id="@+id/etcedu"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
