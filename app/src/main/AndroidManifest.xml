@@ -9,7 +9,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_auto"
-        android:label="Chequeo Movimiento Vehicular"
+        android:label="Chequeo Vehicular"
         android:roundIcon="@mipmap/ic_launcher_auto"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -53,26 +53,76 @@
         </activity>
         <activity
             android:name=".Question"
+            android:label="Chequeo Movimiento Vehicular"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+       </activity>
+        <activity
+            android:name=".Cuestionario_1"
+            android:label="Chequeo Movimiento Vehicular"
+            android:windowSoftInputMode="adjustNothing">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cuestionario_2"
+            android:label="Chequeo Movimiento Vehicular"
+            android:windowSoftInputMode="adjustNothing">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cuestionario_3"
+            android:label="Chequeo Movimiento Vehicular"
+            android:windowSoftInputMode="adjustNothing">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".Question_1"
+            android:label="Chequeo Movimiento Vehicular"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Question_2"
+            android:label="Chequeo Movimiento Vehicular"
+            android:windowSoftInputMode="adjustNothing">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+       </activity>
+        <activity
+            android:name=".Question_3"
+            android:label="Chequeo Movimiento Vehicular"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Datos"
+            android:label="Chequeo Movimiento Vehicular"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Final"
             android:label="Chequeo Movimiento Vehicular">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".Cuestionario_1"
-            android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".Cuestionario_2"
-            android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".Cuestionario_3"
-            android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".Question_1"
-            android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".Question_2"
-            android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".Question_3"
-            android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".Datos"
-            android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".Final"></activity>
+
+
     </application>
 
 </manifest>
