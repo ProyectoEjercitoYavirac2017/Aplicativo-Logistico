@@ -24,7 +24,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void ingresar(View v) {
-        DBHelper admin = new DBHelper(this, "aplicativo", null, 1);
+        DBHelper admin = new DBHelper(Login.this, "aplicativo", null, 1);
         SQLiteDatabase db = admin.getWritableDatabase();
         String usuario = edi1.getText().toString();
         String contrasena = edi2.getText().toString();
@@ -34,20 +34,16 @@ public class Login extends AppCompatActivity {
             String usua=fila.getString(0);
             String pass=fila.getString(1);
              if (edi1.getText().toString().equals(usua)&& edi2.getText().toString().equals(pass)) {
-
-                 Toast.makeText(getApplicationContext(),"Ingreso exitoso", Toast.LENGTH_LONG).show();
+                 Toast.makeText(Login.this,"Ingreso exitoso", Toast.LENGTH_LONG).show();
              }
              else {
-
-                 Toast.makeText(getApplicationContext(),"Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show();
+                 Toast.makeText(Login.this,"Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show();
              }
-
-                 Intent can=new Intent(Login.this,Datos.class);
-                 startActivity(can);
-
-
+             Intent can=new Intent(Login.this,Datos.class);
+             startActivity(can);
+             edi1.setText("");
+             edi2.setText("");
              }
-
          }
     public void registrar(View v) {
         Intent ven = new Intent(this, Registrar.class);

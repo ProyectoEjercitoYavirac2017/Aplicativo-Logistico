@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Registrar extends AppCompatActivity {
     EditText edi1, edi2, edi3;
@@ -24,22 +25,31 @@ public class Registrar extends AppCompatActivity {
     }
 
     public void ingresar (View v) {
-        DBHelper admin = new DBHelper(this, "aplicativo", null, 1);
-        SQLiteDatabase db = admin.getWritableDatabase();
 
         String nombre = edi1.getText().toString();
         String usuario = edi2.getText().toString();
         String contraseña = edi3.getText().toString();
 
-        ContentValues values = new ContentValues();
+        DBHelper admin = new DBHelper(Registrar.this, "aplicativo", null, 1);
 
-        values.put("nombre", nombre);
-        values.put("usuario", usuario);
-        values.put("contrasena", contraseña);
+        if (admin!= null) {
+            SQLiteDatabase db = admin.getWritableDatabase();
+            ContentValues values = new ContentValues();
 
-        db.insert("usuarios", null, values);
-        db.close();
-
+            values.put("nombre", nombre);
+            values.put("usuario", usuario);
+            values.put("contrasena", contraseña);
+            long insertado = db.insert("usuarios", null, values);
+            db.close();
+            if (insertado > 0) {
+                Toast.makeText(Registrar.this, "Se ha ingresado con exito", Toast.LENGTH_SHORT).show();
+                edi1.setText("");
+                edi2.setText("");
+                edi3.setText("");
+            }else{
+                Toast.makeText(Registrar.this, "No se ingreso", Toast.LENGTH_SHORT).show();
+            }
+        }
         Intent ven = new Intent(this, Login.class);
         startActivity(ven);
 

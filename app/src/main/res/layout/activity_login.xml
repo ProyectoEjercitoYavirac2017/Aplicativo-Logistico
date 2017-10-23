@@ -18,22 +18,22 @@ tools:context="com.example.marvinloco.aplicativologistico.Principal">
         android:hint="Contraseña"
         android:inputType="textPassword"
         android:maxLength="15"
-        android:layout_above="@+id/etcedu"
+        android:layout_above="@+id/button"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="28dp" />
+        android:layout_marginBottom="17dp" />
 
     <Button
-        android:id="@+id/etcedu"
         style="@android:style/Widget.Holo.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_2"
+        android:layout_alignEnd="@+id/etcontrasena"
+        android:layout_alignLeft="@+id/etcontrasena"
+        android:layout_alignRight="@+id/etcontrasena"
+        android:layout_alignStart="@+id/etcontrasena"
         android:onClick="ingresar"
         android:text="INGRESAR"
-        android:layout_above="@+id/btn_2"
-        android:layout_alignLeft="@+id/etcontrasena"
-        android:layout_alignStart="@+id/etcontrasena"
-        android:layout_alignRight="@+id/etcontrasena"
-        android:layout_alignEnd="@+id/etcontrasena" />
+        android:id="@+id/button" />
 
     <Button
         android:id="@+id/btn_2"
@@ -59,8 +59,7 @@ tools:context="com.example.marvinloco.aplicativologistico.Principal">
         android:hint="Cédula"
         android:inputType="numberDecimal"
         android:maxLength="10"
-        android:layout_marginBottom="47dp"
-        android:layout_alignBottom="@+id/etcontrasena"
+        android:layout_above="@+id/etcontrasena"
         android:layout_alignLeft="@+id/etcontrasena"
         android:layout_alignStart="@+id/etcontrasena" />
 
