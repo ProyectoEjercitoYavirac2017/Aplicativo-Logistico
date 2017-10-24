@@ -31,7 +31,7 @@ public class Cuestionario_1 extends AppCompatActivity {
         c12 = (CheckBox) findViewById(R.id.cb12);
         c13 = (CheckBox) findViewById(R.id.cb13);
         c14 = (CheckBox) findViewById(R.id.cb14);
-        btn_1 = (Button) findViewById(R.id.etcedu);
+        btn_1 = (Button) findViewById(R.id.btn_1);
 
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -199,7 +199,7 @@ public class Cuestionario_1 extends AppCompatActivity {
         });
 
 
-        btn_1 = (Button) findViewById(R.id.etcedu);
+        btn_1 = (Button) findViewById(R.id.btn_1);
 
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override

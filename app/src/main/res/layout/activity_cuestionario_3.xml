@@ -69,7 +69,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
                 android:text=" 20.-Considerando la hora de salida y el destino del vehículo, le permite cumplir su itinerario en horas luz  (HASTA LAS 18:00)."
                 android:textColor="@android:color/background_dark"
@@ -106,7 +105,7 @@
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/txt3"
+                android:id="@+id/txt7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -120,7 +119,7 @@
 
 
             <Button
-                android:id="@+id/etcedu"
+                android:id="@+id/btn_1"
                 style="@android:style/Widget.Holo.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

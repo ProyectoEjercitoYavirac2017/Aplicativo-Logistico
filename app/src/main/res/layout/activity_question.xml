@@ -271,7 +271,7 @@
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/txt3"
+                android:id="@+id/txt7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -354,7 +354,7 @@
                 android:inputType="textPersonName" />
 
             <Button
-                android:id="@+id/etcedu"
+                android:id="@+id/btn_1"
                 style="@android:style/Widget.Holo.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

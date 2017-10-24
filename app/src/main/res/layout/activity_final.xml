@@ -11,9 +11,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,31 +44,41 @@
                 android:weightSum="1">
 
                 <Button
-                    android:id="@+id/etcedu"
+                    android:id="@+id/btn_1"
                     style="@android:style/Widget.Button.Inset"
-                    android:layout_width="160dp"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_weight="0.19"
-                    android:text="Imprimir" />
+                    android:text="Crear Pdf" />
 
                 <Button
                     android:id="@+id/btn_2"
                     style="@android:style/Widget.Button.Inset"
-                    android:layout_width="160dp"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="Enviar a E-mail" />
+                    android:layout_weight="0.19"
+                    android:text="Leer Pdf" />
+
+                <Button
+                    android:id="@+id/btn_3"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Enviar Pdf" />
 
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_3"
+                android:id="@+id/btn_4"
                 style="@android:style/Widget.Holo.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:layout_weight="0.34"
+                android:onClick="salir"
                 android:text="Salir" />
 
         </LinearLayout>

@@ -26,7 +26,7 @@ tools:context="com.example.marvinloco.aplicativologistico.Principal">
         style="@android:style/Widget.Holo.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_2"
+        android:layout_above="@+id/btn_3"
         android:layout_alignEnd="@+id/etcontrasena"
         android:layout_alignLeft="@+id/etcontrasena"
         android:layout_alignRight="@+id/etcontrasena"
@@ -36,7 +36,7 @@ tools:context="com.example.marvinloco.aplicativologistico.Principal">
         android:id="@+id/button" />
 
     <Button
-        android:id="@+id/btn_2"
+        android:id="@+id/btn_3"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
@@ -64,14 +64,14 @@ tools:context="com.example.marvinloco.aplicativologistico.Principal">
         android:layout_alignStart="@+id/etcontrasena" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/etusuario"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:text="Inicio Sesión"
         android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
-        android:layout_above="@+id/etusuario"
-        android:layout_centerHorizontal="true" />
+        android:textSize="20sp" />
 
 </RelativeLayout>

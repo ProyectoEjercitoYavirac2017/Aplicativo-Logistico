@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -58,30 +59,30 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
-       </activity>
+        </activity>
         <activity
             android:name=".Cuestionario_1"
             android:label="Chequeo Movimiento Vehicular"
             android:windowSoftInputMode="adjustNothing">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Cuestionario_2"
             android:label="Chequeo Movimiento Vehicular"
             android:windowSoftInputMode="adjustNothing">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Cuestionario_3"
             android:label="Chequeo Movimiento Vehicular"
             android:windowSoftInputMode="adjustNothing">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Question_1"
@@ -95,10 +96,10 @@
             android:name=".Question_2"
             android:label="Chequeo Movimiento Vehicular"
             android:windowSoftInputMode="adjustNothing">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-        </intent-filter>
-       </activity>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Question_3"
             android:label="Chequeo Movimiento Vehicular"
@@ -115,14 +116,14 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".Final"
+        <activity
+            android:name=".Final"
             android:label="Chequeo Movimiento Vehicular">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-
-
+        <activity android:name=".Pdf"></activity>
     </application>
 
 </manifest>

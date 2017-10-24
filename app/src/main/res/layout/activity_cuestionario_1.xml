@@ -26,7 +26,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/editText4"
                 android:layout_marginTop="10dp"
                 android:text=" 9.-Se dispone de medios de comunicación y contactos con quienes comunicarse en caso de emergencia."
                 android:textColor="@android:color/background_dark"
@@ -41,14 +40,14 @@
                     android:id="@+id/cb1"
                     android:layout_width="186dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt3"
+                    android:layout_below="@+id/txt7"
                     android:text="SI" />
 
                 <CheckBox
                     android:id="@+id/cb2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt3"
+                    android:layout_below="@+id/txt7"
                     android:layout_toEndOf="@+id/et1"
                     android:layout_toRightOf="@+id/et1"
                     android:layout_weight="1"
@@ -93,7 +92,7 @@
                     android:id="@+id/cb4"
                     android:layout_width="99dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt3"
+                    android:layout_below="@+id/txt7"
                     android:layout_toEndOf="@+id/et1"
                     android:layout_toRightOf="@+id/et1"
                     android:text="NO"
@@ -283,7 +282,7 @@
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/txt3"
+                android:id="@+id/txt7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -325,7 +324,7 @@
                 android:inputType="textPersonName" />
 
             <Button
-                android:id="@+id/etcedu"
+                android:id="@+id/btn_1"
                 style="@android:style/Widget.Holo.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -64,7 +64,7 @@ public class Datos extends AppCompatActivity  {
 
 
 
-        btn_1 = (Button) findViewById(R.id.etcedu);
+        btn_1 = (Button) findViewById(R.id.btn_1);
 
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,7 +75,7 @@ public class Datos extends AppCompatActivity  {
             }
         });
 
-        btn_2 = (Button) findViewById(R.id.btn_2);
+        btn_2 = (Button) findViewById(R.id.btn_3);
 
         btn_2.setOnClickListener(new View.OnClickListener() {
             @Override

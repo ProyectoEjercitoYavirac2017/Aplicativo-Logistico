@@ -71,7 +71,7 @@ public class Cuestionario_3 extends AppCompatActivity {
         });
 
 
-        btn_1 = (Button) findViewById(R.id.etcedu);
+        btn_1 = (Button) findViewById(R.id.btn_1);
 
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
